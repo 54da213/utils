@@ -68,12 +68,12 @@ class Excel(object):
 def main():
     fields=[("姓名","性别","年龄","公司")]
     file_name="C:\\Users\\dell\\Desktop\\file.xlsx"
-    data=[("小刘", "男", 22, "绿盟科技"),
-          ("小刘", "男", 22, "绿盟科技"),
-          ("小刘", "男", 22, "绿盟科技"),
-          ("小刘", "男", 22, "绿盟科技"),
-          ("小刘", "男", 22, "绿盟科技"),
-          ("小刘", "男", 22, "绿盟科技")]
+    data=[("小刘", "男", 22, "xxxxx"),
+          ("小刘", "男", 22, "xxxxx"),
+          ("小刘", "男", 22, "xxxxx"),
+          ("小刘", "男", 22, "xxxxx"),
+          ("小刘", "男", 22, "xxxxx"),
+          ("小刘", "男", 22, "xxxxx")]
     excel=Excel(write_file=file_name,table_name="log")
     excel.write(fields,data)
     excel.save()
